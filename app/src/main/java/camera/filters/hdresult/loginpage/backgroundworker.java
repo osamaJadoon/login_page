@@ -3,6 +3,7 @@ package camera.filters.hdresult.loginpage;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -77,6 +78,7 @@ public class backgroundworker extends AsyncTask<String, Void,String> {
     @Override
     protected void onPostExecute(String ressult) {
       alertDialog.setMessage(ressult);
+        Toast.makeText(context, "sheeka ", Toast.LENGTH_SHORT).show();
       alertDialog.show();
     }
 
