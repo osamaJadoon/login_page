@@ -32,5 +32,4 @@ public class MainActivity extends AppCompatActivity {
         String type = "login";
         backgroundworker bckgrnd = new backgroundworker(this);
         bckgrnd.execute(type,username,userPassword);
-    }
-}
+    }}
